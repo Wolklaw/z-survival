@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Z Survival Press Kit</title>
+<style>
+  :root { --bg:#2A2238; --panel:#352c47; --text:#FFF6E5; --muted:#c9bfd6; --accent:#FFC857; --teal:#2F9C95; --danger:#E4572E; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui, "Segoe UI", sans-serif; }
+  .wrap { max-width:960px; margin:0 auto; padding:0 16px; }
+  header { padding:48px 0 24px; }
+  h1 { margin:0; font-size:clamp(36px,7vw,64px); letter-spacing:.04em; color:var(--accent); line-height:1.1; }
+  .tag { margin:8px 0 0; font-size:18px; color:var(--muted); letter-spacing:.06em; text-transform:uppercase; }
+  .hero img { width:100%; border-radius:10px; display:block; border:3px solid var(--accent); }
+  h2 { color:var(--accent); margin:40px 0 12px; font-size:22px; letter-spacing:.04em; text-transform:uppercase; }
+  .btns { display:flex; flex-wrap:wrap; gap:12px; margin:20px 0; }
+  .btn { display:inline-block; padding:12px 20px; border-radius:6px; background:var(--danger); color:#fff; font-weight:700; text-decoration:none; }
+  .btn.alt { background:var(--teal); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+  .grid img { width:100%; border-radius:8px; display:block; }
+  table { border-collapse:collapse; width:100%; background:var(--panel); border-radius:8px; overflow:hidden; }
+  td { padding:10px 14px; border-bottom:1px solid rgba(255,255,255,.08); vertical-align:top; }
+  td:first-child { color:var(--accent); width:30%; font-weight:600; }
+  ul { padding-left:20px; } li { margin:6px 0; }
+  .sw { display:flex; flex-wrap:wrap; gap:10px; }
+  .sw span { padding:10px 14px; border-radius:6px; font:600 14px ui-monospace, monospace; color:#2A2238; }
+  footer { margin:48px 0; color:var(--muted); font-size:14px; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Z SURVIVAL</h1>
+    <p class="tag">Build by day. Survive the night.</p>
+  </header>
+
+  <div class="hero"><img src="images/01-shelter-cutaway.png" alt="The cutaway shelter with rooms and survivors"></div>
+
+  <div class="btns">
+    <a class="btn" href="https://github.com/Wolklaw/z-survival/releases/latest">Download (Windows / Android)</a>
+    <a class="btn alt" href="FACTSHEET.md">Fact sheet</a>
+    <a class="btn alt" href="https://wolklaw.dev">wolklaw.dev</a>
+  </div>
+
+  <h2>About</h2>
+  <p>The world ended. You are the <b>Overseer</b>: the one who keeps an underground shelter running and its survivors alive.
+  By day you build and merge rooms, put people to work where their stats fit, and fortify the yard above.
+  By night the horde comes. Hold the shelter from below and let your defenses work, or step outside,
+  take a gun and fight at the door yourself.</p>
+
+  <h2>Facts</h2>
+  <table>
+    <tr><td>Developer</td><td>Wolklaw &middot; <a href="https://wolklaw.dev">wolklaw.dev</a></td></tr>
+    <tr><td>Genre</td><td>Shelter management + top-down zombie defense</td></tr>
+    <tr><td>Platforms</td><td>Windows PC (64-bit), Android</td></tr>
+    <tr><td>Engine</td><td>Unity 6</td></tr>
+    <tr><td>Version</td><td>0.9.0, early playable build</td></tr>
+    <tr><td>Price</td><td>Free download</td></tr>
+    <tr><td>Input</td><td>Mouse + keyboard; touch on Android</td></tr>
+  </table>
+
+  <h2>Features</h2>
+  <ul>
+    <li>Two views, one place: a side-on shelter cutaway and a top-down yard, one Tab away.</li>
+    <li>Build, merge and upgrade rooms; match survivors' stats to jobs.</li>
+    <li>Living survivors with traits, moods, friendships, rivalries and children.</li>
+    <li>Create your own Overseer with a background and 10 perks to rank up.</li>
+    <li>Fires, leaks, surges, rats and sickness below; strangers (and bites) at the door.</li>
+    <li>Nights you can plan for: zombie routes are shown all day, so bend them with barricades and build a kill zone.</li>
+    <li>Six upgradeable guns, from pistol to LMG.</li>
+  </ul>
+
+  <h2>Screenshots</h2>
+  <div class="grid">
+    <a href="images/02-the-yard.png"><img src="images/02-the-yard.png" alt="The yard above the shelter" loading="lazy"></a>
+    <a href="images/03-zombie-routes-and-traps.png"><img src="images/03-zombie-routes-and-traps.png" alt="Zombie route preview with barricades and traps" loading="lazy"></a>
+    <a href="images/04-stranger-at-the-door.png"><img src="images/04-stranger-at-the-door.png" alt="A stranger at the door" loading="lazy"></a>
+    <a href="images/05-overseer-creator.png"><img src="images/05-overseer-creator.png" alt="Create your Overseer" loading="lazy"></a>
+  </div>
+
+  <h2>Colors</h2>
+  <div class="sw">
+    <span style="background:#FFC857">#FFC857</span>
+    <span style="background:#2F9C95;color:#fff">#2F9C95</span>
+    <span style="background:#E4572E;color:#fff">#E4572E</span>
+    <span style="background:#2A2238;color:#fff;outline:1px solid #555">#2A2238</span>
+    <span style="background:#FFF6E5">#FFF6E5</span>
+  </div>
+
+  <footer>
+    Audio is CC0, see <a href="CREDITS.md">credits</a>. Press and creators are welcome to use these screenshots.
+    &middot; <a href="https://wolklaw.dev">wolklaw.dev</a>
+  </footer>
+</div>
+</body>
+</html>
